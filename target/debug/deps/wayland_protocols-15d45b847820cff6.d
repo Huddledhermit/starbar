@@ -1,0 +1,10 @@
+/home/Hermit/starbar/target/debug/deps/wayland_protocols-15d45b847820cff6.d: /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/lib.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/protocol_macro.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/ext.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/wp.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/xdg.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/xwayland.rs
+
+/home/Hermit/starbar/target/debug/deps/libwayland_protocols-15d45b847820cff6.rmeta: /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/lib.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/protocol_macro.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/ext.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/wp.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/xdg.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/xwayland.rs
+
+/home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/lib.rs:
+/home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/protocol_macro.rs:
+/home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/ext.rs:
+/home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/wp.rs:
+/home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/xdg.rs:
+/home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/xwayland.rs:

@@ -1,0 +1,12 @@
+/home/Hermit/starbar/target/debug/deps/rangemap-e9a7297aad1d76a6.d: /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/lib.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/inclusive_map.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/inclusive_set.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/map.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/operations.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/set.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/range_wrapper.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/std_ext.rs
+
+/home/Hermit/starbar/target/debug/deps/librangemap-e9a7297aad1d76a6.rmeta: /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/lib.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/inclusive_map.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/inclusive_set.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/map.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/operations.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/set.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/range_wrapper.rs /home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/std_ext.rs
+
+/home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/lib.rs:
+/home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/inclusive_map.rs:
+/home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/inclusive_set.rs:
+/home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/map.rs:
+/home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/operations.rs:
+/home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/set.rs:
+/home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/range_wrapper.rs:
+/home/Hermit/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rangemap-1.7.0/src/std_ext.rs:
