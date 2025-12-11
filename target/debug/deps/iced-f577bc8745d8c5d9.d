@@ -1,0 +1,13 @@
+/home/gavin/starbar/target/debug/deps/iced-f577bc8745d8c5d9.d: /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/lib.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/error.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/program.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/application.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/daemon.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/settings.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/time.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/window.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/window/icon.rs
+
+/home/gavin/starbar/target/debug/deps/libiced-f577bc8745d8c5d9.rmeta: /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/lib.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/error.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/program.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/application.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/daemon.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/settings.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/time.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/window.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/window/icon.rs
+
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/lib.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/error.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/program.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/application.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/daemon.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/settings.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/time.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/window.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.13.1/src/window/icon.rs:
