@@ -1,16 +1,33 @@
-use iced;
+use iced::widget::{button, column, text};
 mod configreader;
 mod modules;
 
-fn main() -> iced::Result {}
-enum Message {}
+fn main() -> iced::Result {
+    iced::run("My App", bar::update, bar::view)
+}
+
+#[derive(Debug, Clone)]
+enum Message {
+    ButtonPressed,
+}
+
 #[derive(Default)]
-struct starbar {}
-impl starbar {
+struct bar {
+    counter: usize,
+}
+
+impl bar {
     fn update(&mut self, message: Message) {
-        match message {}
+        match message {
+            Message::ButtonPressed => self.counter += 1,
+        }
     }
-    fn view(&self) {
-        column![].into
+
+    fn view(&self) -> iced::Element<Message> {
+        column![
+            text(self.counter),
+            button("Increase").on_press(Message::ButtonPressed),
+        ]
+        .into()
     }
 }
