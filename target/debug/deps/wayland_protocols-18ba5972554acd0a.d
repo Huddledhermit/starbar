@@ -1,0 +1,10 @@
+/home/gavin/starbar/target/debug/deps/wayland_protocols-18ba5972554acd0a.d: /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/lib.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/protocol_macro.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/ext.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/wp.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/xdg.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/xwayland.rs
+
+/home/gavin/starbar/target/debug/deps/libwayland_protocols-18ba5972554acd0a.rmeta: /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/lib.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/protocol_macro.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/ext.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/wp.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/xdg.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/xwayland.rs
+
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/lib.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/protocol_macro.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/ext.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/wp.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/xdg.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-protocols-0.32.9/src/xwayland.rs:

@@ -1,0 +1,11 @@
+/home/gavin/starbar/target/debug/deps/iced_glyphon-24d866fe166a879d.d: /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_glyphon-0.6.0/src/lib.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_glyphon-0.6.0/src/cache.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_glyphon-0.6.0/src/error.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_glyphon-0.6.0/src/text_atlas.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_glyphon-0.6.0/src/text_render.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_glyphon-0.6.0/src/viewport.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_glyphon-0.6.0/src/shader.wgsl
+
+/home/gavin/starbar/target/debug/deps/libiced_glyphon-24d866fe166a879d.rmeta: /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_glyphon-0.6.0/src/lib.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_glyphon-0.6.0/src/cache.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_glyphon-0.6.0/src/error.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_glyphon-0.6.0/src/text_atlas.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_glyphon-0.6.0/src/text_render.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_glyphon-0.6.0/src/viewport.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_glyphon-0.6.0/src/shader.wgsl
+
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_glyphon-0.6.0/src/lib.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_glyphon-0.6.0/src/cache.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_glyphon-0.6.0/src/error.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_glyphon-0.6.0/src/text_atlas.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_glyphon-0.6.0/src/text_render.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_glyphon-0.6.0/src/viewport.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_glyphon-0.6.0/src/shader.wgsl:

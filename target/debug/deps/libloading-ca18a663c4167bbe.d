@@ -1,0 +1,12 @@
+/home/gavin/starbar/target/debug/deps/libloading-ca18a663c4167bbe.d: /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/lib.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/changelog.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/os/mod.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/os/unix/mod.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/os/unix/consts.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/util.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/error.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/safe.rs
+
+/home/gavin/starbar/target/debug/deps/liblibloading-ca18a663c4167bbe.rmeta: /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/lib.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/changelog.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/os/mod.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/os/unix/mod.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/os/unix/consts.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/util.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/error.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/safe.rs
+
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/lib.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/changelog.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/os/mod.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/os/unix/mod.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/os/unix/consts.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/util.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/error.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libloading-0.7.4/src/safe.rs:
