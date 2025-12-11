@@ -1,15 +1,18 @@
+use std::string;
+
 use chrono::{DateTime, Local};
 use iced;
 
-struct Clock {
-    date_time: DateTime<Local>,
+pub struct Clock {
+    text: String,
+    tooltip: String,
 }
-impl clock {
+impl Clock {
     fn get_time(self) -> String {
         let time_no_format = chrono::Local::now();
         format!("{}", time_no_format.format("%H:%M|%d/%m"))
     }
 }
-struct Cpu {}
+pub struct Cpu {}
 
-struct Panel {}
+pub struct Panel {}

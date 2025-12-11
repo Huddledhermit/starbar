@@ -3,7 +3,7 @@ mod configreader;
 mod modules;
 
 fn main() -> iced::Result {
-    iced::run("My App", bar::update, bar::view)
+    iced::run("", bar::update, bar::view)
 }
 
 #[derive(Debug, Clone)]
@@ -31,3 +31,5 @@ impl bar {
         .into()
     }
 }
+
+fn build_clock(icons: String, tooltip: bool) -> modules::Clock {}
