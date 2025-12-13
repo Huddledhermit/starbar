@@ -3,7 +3,7 @@ mod configreader;
 mod modules;
 
 fn main() -> iced::Result {
-    iced::run("", bar::update, bar::view)
+    iced::run("", Bar::update, Bar::view)
 }
 
 #[derive(Debug, Clone)]
@@ -12,11 +12,11 @@ enum Message {
 }
 
 #[derive(Default)]
-struct bar {
+struct Bar {
     counter: usize,
 }
 
-impl bar {
+impl Bar {
     fn update(&mut self, message: Message) {
         match message {
             Message::ButtonPressed => self.counter += 1,
@@ -25,11 +25,9 @@ impl bar {
 
     fn view(&self) -> iced::Element<Message> {
         column![
-            text(self.counter),
+            text(&self.counter),
             button("Increase").on_press(Message::ButtonPressed),
         ]
         .into()
     }
 }
-
-fn build_clock(icons: String, tooltip: bool) -> modules::Clock {}

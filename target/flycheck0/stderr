@@ -1,90 +1,12 @@
-   0.264975343s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/gavin/starbar) target="starbar"}: cargo::core::compiler::fingerprint: fingerprint error for starbar v0.1.0 (/home/gavin/starbar)/Check { test: false }/TargetInner { name: "starbar", doc: true, ..: with_path("/home/gavin/starbar/src/main.rs", Edition2024) }
-   0.265017734s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/gavin/starbar) target="starbar"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/gavin/starbar/target/debug/.fingerprint/starbar-b4176de4cdf0dfb5/bin-starbar`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: cargo_util::paths::read_bytes
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
-   3: cargo::core::compiler::fingerprint::prepare_target
-   4: cargo::core::compiler::compile
-   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   6: cargo::ops::cargo_compile::compile_ws
-   7: cargo::ops::cargo_compile::compile_with_exec
-   8: cargo::ops::cargo_compile::compile
-   9: cargo::commands::check::exec
-  10: <cargo::cli::Exec>::exec
-  11: cargo::main
-  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  13: std::rt::lang_start::<()>::{closure#0}
-  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
-             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library/core/src/ops/function.rs:287:21
-  15: std::panicking::catch_unwind::do_call
-             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library/std/src/panicking.rs:590:40
-  16: std::panicking::catch_unwind
-             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library/std/src/panicking.rs:553:19
-  17: std::panic::catch_unwind
-             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library/std/src/panic.rs:359:14
-  18: std::rt::lang_start_internal::{{closure}}
-             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library/std/src/rt.rs:175:24
-  19: std::panicking::catch_unwind::do_call
-             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library/std/src/panicking.rs:590:40
-  20: std::panicking::catch_unwind
-             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library/std/src/panicking.rs:553:19
-  21: std::panic::catch_unwind
-             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library/std/src/panic.rs:359:14
-  22: std::rt::lang_start_internal
-             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library/std/src/rt.rs:171:5
-  23: main
-  24: <unknown>
-  25: __libc_start_main
-  26: <unknown>
-   0.289032227s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/gavin/starbar) target="starbar"}: cargo::core::compiler::fingerprint: fingerprint error for starbar v0.1.0 (/home/gavin/starbar)/Check { test: true }/TargetInner { name: "starbar", doc: true, ..: with_path("/home/gavin/starbar/src/main.rs", Edition2024) }
-   0.289058570s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/gavin/starbar) target="starbar"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/gavin/starbar/target/debug/.fingerprint/starbar-15583eb628b06851/test-bin-starbar`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: cargo_util::paths::read_bytes
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
-   3: cargo::core::compiler::fingerprint::prepare_target
-   4: cargo::core::compiler::compile
-   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   6: cargo::ops::cargo_compile::compile_ws
-   7: cargo::ops::cargo_compile::compile_with_exec
-   8: cargo::ops::cargo_compile::compile
-   9: cargo::commands::check::exec
-  10: <cargo::cli::Exec>::exec
-  11: cargo::main
-  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  13: std::rt::lang_start::<()>::{closure#0}
-  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
-             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library/core/src/ops/function.rs:287:21
-  15: std::panicking::catch_unwind::do_call
-             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library/std/src/panicking.rs:590:40
-  16: std::panicking::catch_unwind
-             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library/std/src/panicking.rs:553:19
-  17: std::panic::catch_unwind
-             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library/std/src/panic.rs:359:14
-  18: std::rt::lang_start_internal::{{closure}}
-             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library/std/src/rt.rs:175:24
-  19: std::panicking::catch_unwind::do_call
-             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library/std/src/panicking.rs:590:40
-  20: std::panicking::catch_unwind
-             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library/std/src/panicking.rs:553:19
-  21: std::panic::catch_unwind
-             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library/std/src/panic.rs:359:14
-  22: std::rt::lang_start_internal
-             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library/std/src/rt.rs:171:5
-  23: main
-  24: <unknown>
-  25: __libc_start_main
-  26: <unknown>
-    Checking starbar v0.1.0 (/home/gavin/starbar)
-error: could not compile `starbar` (bin "starbar" test) due to 1 previous error; 7 warnings emitted
-warning: build failed, waiting for other jobs to finish...
-error: could not compile `starbar` (bin "starbar") due to 1 previous error; 7 warnings emitted
+   0.144360313s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint: stale: changed "/home/Hermit/starbar/src/modules.rs"
+   0.144375541s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint:           (vs) "/home/Hermit/starbar/target/debug/.fingerprint/starbar-58ce82a423edecde/dep-bin-starbar"
+   0.144378357s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1765581750, nanos: 49660821 } < FileTime { seconds: 1765581753, nanos: 713665744 }
+   0.144645349s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint: fingerprint dirty for starbar v0.1.0 (/home/Hermit/starbar)/Check { test: false }/TargetInner { name: "starbar", doc: true, ..: with_path("/home/Hermit/starbar/src/main.rs", Edition2024) }
+   0.144656751s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/Hermit/starbar/target/debug/.fingerprint/starbar-58ce82a423edecde/dep-bin-starbar", reference_mtime: FileTime { seconds: 1765581750, nanos: 49660821 }, stale: "/home/Hermit/starbar/src/modules.rs", stale_mtime: FileTime { seconds: 1765581753, nanos: 713665744 } }))
+   0.153311372s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint: stale: changed "/home/Hermit/starbar/src/modules.rs"
+   0.153317223s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint:           (vs) "/home/Hermit/starbar/target/debug/.fingerprint/starbar-290dfe199c04e94d/dep-test-bin-starbar"
+   0.153319838s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1765581750, nanos: 49660821 } < FileTime { seconds: 1765581753, nanos: 713665744 }
+   0.153346408s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint: fingerprint dirty for starbar v0.1.0 (/home/Hermit/starbar)/Check { test: true }/TargetInner { name: "starbar", doc: true, ..: with_path("/home/Hermit/starbar/src/main.rs", Edition2024) }
+   0.153353321s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/Hermit/starbar/target/debug/.fingerprint/starbar-290dfe199c04e94d/dep-test-bin-starbar", reference_mtime: FileTime { seconds: 1765581750, nanos: 49660821 }, stale: "/home/Hermit/starbar/src/modules.rs", stale_mtime: FileTime { seconds: 1765581753, nanos: 713665744 } }))
+    Checking starbar v0.1.0 (/home/Hermit/starbar)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.26s
