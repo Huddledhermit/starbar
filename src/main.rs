@@ -1,8 +1,11 @@
 use iced::widget::{button, column, text};
+use::iced::time;
+use iced::Subscription;
 mod configreader;
 mod modules;
 
 fn main() -> iced::Result {
+
     iced::run("", Bar::update, Bar::view)
 }
 
@@ -24,10 +27,15 @@ impl Bar {
     }
 
     fn view(&self) -> iced::Element<Message> {
+
         column![
             text(&self.counter),
             button("Increase").on_press(Message::ButtonPressed),
         ]
         .into()
+    }
+
+    fn Subscription({
+
     }
 }
