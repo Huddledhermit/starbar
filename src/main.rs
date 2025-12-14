@@ -35,7 +35,7 @@ impl Bar {
         .into()
     }
 
-    fn Subscription({
+    fn Subscription(stat::){}
 
     }
 }
