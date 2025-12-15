@@ -12,6 +12,7 @@ fn main() -> iced::Result {
 #[derive(Debug, Clone)]
 enum Message {
     ButtonPressed,
+    Update
 }
 
 #[derive(Default)]
@@ -21,7 +22,7 @@ struct Bar {
 
 impl Bar {
     fn update(&mut self, message: Message) {
-        match message {
+        match Message {
             Message::ButtonPressed => self.counter += 1,
         }
     }
