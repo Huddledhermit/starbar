@@ -1,6 +1,7 @@
-use iced::widget::{button, column, text};
-use::iced::time;
-use iced::Subscription;
+use iced::{widget::{button, column, text},
+time::{self, Duration},
+Subscription,
+};
 mod configreader;
 mod modules;
 
@@ -23,7 +24,7 @@ struct Bar {
 impl Bar {
     fn update(&mut self, message: Message) {
         match Message {
-            Message::ButtonPressed => self.counter += 1,
+            Message::Update =>
         }
     }
 
@@ -36,7 +37,9 @@ impl Bar {
         .into()
     }
 
-    fn Subscription(stat::){}
+    fn Subscription(&self){
+        time::every(Duration::from_secs(1)).map(|_| Message::Update)
+    }
 
     }
 }

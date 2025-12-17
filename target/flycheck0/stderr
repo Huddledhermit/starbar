@@ -1,13 +1,55 @@
-   0.351843516s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint: stale: changed "/home/Hermit/starbar/src/main.rs"
-   0.351859476s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint:           (vs) "/home/Hermit/starbar/target/debug/.fingerprint/starbar-58ce82a423edecde/dep-bin-starbar"
-   0.351862301s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1765598636, nanos: 503964342 } < FileTime { seconds: 1765771068, nanos: 261415506 }
-   0.352109006s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint: fingerprint dirty for starbar v0.1.0 (/home/Hermit/starbar)/Check { test: false }/TargetInner { name: "starbar", doc: true, ..: with_path("/home/Hermit/starbar/src/main.rs", Edition2024) }
-   0.352120287s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/Hermit/starbar/target/debug/.fingerprint/starbar-58ce82a423edecde/dep-bin-starbar", reference_mtime: FileTime { seconds: 1765598636, nanos: 503964342 }, stale: "/home/Hermit/starbar/src/main.rs", stale_mtime: FileTime { seconds: 1765771068, nanos: 261415506 } }))
-   0.366907899s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint: stale: changed "/home/Hermit/starbar/src/main.rs"
-   0.366916615s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint:           (vs) "/home/Hermit/starbar/target/debug/.fingerprint/starbar-290dfe199c04e94d/dep-test-bin-starbar"
-   0.366919320s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1765598636, nanos: 503964342 } < FileTime { seconds: 1765771068, nanos: 261415506 }
-   0.366965497s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint: fingerprint dirty for starbar v0.1.0 (/home/Hermit/starbar)/Check { test: true }/TargetInner { name: "starbar", doc: true, ..: with_path("/home/Hermit/starbar/src/main.rs", Edition2024) }
-   0.366972681s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/Hermit/starbar/target/debug/.fingerprint/starbar-290dfe199c04e94d/dep-test-bin-starbar", reference_mtime: FileTime { seconds: 1765598636, nanos: 503964342 }, stale: "/home/Hermit/starbar/src/main.rs", stale_mtime: FileTime { seconds: 1765771068, nanos: 261415506 } }))
+   0.148240632s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint: fingerprint error for starbar v0.1.0 (/home/Hermit/starbar)/Check { test: false }/TargetInner { name: "starbar", doc: true, ..: with_path("/home/Hermit/starbar/src/main.rs", Edition2024) }
+   0.148264427s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/Hermit/starbar/target/debug/.fingerprint/starbar-e4b7edc5d1982cb4/bin-starbar`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: __libc_start_call_main
+  17: __libc_start_main_alias_1
+  18: <unknown>
+   0.157185846s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint: fingerprint error for starbar v0.1.0 (/home/Hermit/starbar)/Check { test: true }/TargetInner { name: "starbar", doc: true, ..: with_path("/home/Hermit/starbar/src/main.rs", Edition2024) }
+   0.157194683s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/Hermit/starbar/target/debug/.fingerprint/starbar-825e2deaa1a67563/test-bin-starbar`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: __libc_start_call_main
+  17: __libc_start_main_alias_1
+  18: <unknown>
     Checking starbar v0.1.0 (/home/Hermit/starbar)
 error: could not compile `starbar` (bin "starbar" test) due to 1 previous error
 warning: build failed, waiting for other jobs to finish...
