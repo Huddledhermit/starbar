@@ -1,2 +1,2 @@
-use serde;
-use toml;
+use serde::Deserialize;
+use toml::{Table };
