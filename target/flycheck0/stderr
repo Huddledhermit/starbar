@@ -1,5 +1,5 @@
-   0.148240632s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint: fingerprint error for starbar v0.1.0 (/home/Hermit/starbar)/Check { test: false }/TargetInner { name: "starbar", doc: true, ..: with_path("/home/Hermit/starbar/src/main.rs", Edition2024) }
-   0.148264427s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/Hermit/starbar/target/debug/.fingerprint/starbar-e4b7edc5d1982cb4/bin-starbar`
+   0.155586269s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint: fingerprint error for starbar v0.1.0 (/home/Hermit/starbar)/Check { test: false }/TargetInner { name: "starbar", doc: true, ..: with_path("/home/Hermit/starbar/src/main.rs", Edition2024) }
+   0.155619822s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/Hermit/starbar/target/debug/.fingerprint/starbar-e4b7edc5d1982cb4/bin-starbar`
 
 Caused by:
     No such file or directory (os error 2)
@@ -24,8 +24,8 @@ Stack backtrace:
   16: __libc_start_call_main
   17: __libc_start_main_alias_1
   18: <unknown>
-   0.157185846s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint: fingerprint error for starbar v0.1.0 (/home/Hermit/starbar)/Check { test: true }/TargetInner { name: "starbar", doc: true, ..: with_path("/home/Hermit/starbar/src/main.rs", Edition2024) }
-   0.157194683s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/Hermit/starbar/target/debug/.fingerprint/starbar-825e2deaa1a67563/test-bin-starbar`
+   0.166399244s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint: fingerprint error for starbar v0.1.0 (/home/Hermit/starbar)/Check { test: true }/TargetInner { name: "starbar", doc: true, ..: with_path("/home/Hermit/starbar/src/main.rs", Edition2024) }
+   0.166413200s  INFO prepare_target{force=false package_id=starbar v0.1.0 (/home/Hermit/starbar) target="starbar"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/Hermit/starbar/target/debug/.fingerprint/starbar-825e2deaa1a67563/test-bin-starbar`
 
 Caused by:
     No such file or directory (os error 2)

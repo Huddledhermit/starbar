@@ -5,6 +5,10 @@ Subscription,
 mod configreader;
 mod modules;
 
+fn update(clock: &modules::Clock){
+    clock.Update_Time();
+}
+
 fn main() -> iced::Result {
 
     iced::run("", Bar::update, Bar::view)
@@ -12,7 +16,6 @@ fn main() -> iced::Result {
 
 #[derive(Debug, Clone)]
 enum Message {
-    ButtonPressed,
     Update
 }
 
@@ -24,7 +27,7 @@ struct Bar {
 impl Bar {
     fn update(&mut self, message: Message) {
         match Message {
-            Message::Update =>
+            Message::Update => update
         }
     }
 
