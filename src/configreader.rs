@@ -13,6 +13,9 @@ struct Cfg {
     clock: Option<clock>,
   //  launcher: Option<menu>,
     wifi: Option<wifi>,
+    //bluetooth: Option<btooth>,
+    //power: Option<power>,
+    // battery: Option<battery>
 }
 //function to read the config and parse it into structs
 fn read_config(file: String) {
