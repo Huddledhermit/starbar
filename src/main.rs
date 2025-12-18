@@ -6,8 +6,8 @@ use iced::{
 mod configreader;
 mod modules;
 
-fn update(clock: &mut modules::Clock) {
-    clock.Update_Time();
+fn update() {
+
 }
 
 fn main() -> iced::Result {
