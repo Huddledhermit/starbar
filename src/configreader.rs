@@ -1,7 +1,11 @@
-use serde::Deserialize;
-use toml::{Table };
+use std::string;
 
-fn read_config(file: String){
+use serde::Deserialize;
+use toml::Table;
+struct cfg {
+    colors: string,
+}
+fn read_config(file: String) {
     let file = std::fs::read_to_string("starbar/config.toml");
-    let config : Table = file.parse().unwrap();
+    let config: Table = file.parse().unwrap();
 }
