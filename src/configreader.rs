@@ -10,7 +10,7 @@ struct cfg {
     modules-right: string,
     modules-center: string,
     cpu: string,
-    clock: string,
+    clock: Option<clock>,
     launcher: string,
     wifi: string
 }
