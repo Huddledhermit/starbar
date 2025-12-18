@@ -1,1 +1,0 @@
-for<'a> fn(&'a bar) -> iced_core::element::Element<'a, Message, Theme, iced_renderer::fallback::Renderer<iced_wgpu::Renderer, iced_tiny_skia::Renderer>> {bar::view}
