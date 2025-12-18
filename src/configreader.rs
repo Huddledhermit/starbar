@@ -5,14 +5,14 @@ use toml::Table;
 #[derive(Deserialize)]
 struct Cfg {
     colors: String,
-    barinfo: String,
-    modules_left: Option<String>,
-    modules_right: Option<String>,
-    modules_center: Option<String>,
+    //barinfo: starbar,
+    modules_left: Option<vec<String>>,
+    modules_right: Option<vec<String>>,
+    modules_center: Option<vec<String>>,
     cpu: Option<cpu>,
     clock: Option<clock>,
-    launcher: Option<String>,
-    wifi: Option<String>,
+  //  launcher: Option<menu>,
+    wifi: Option<wifi>,
 }
 //function to read the config and parse it into structs
 fn read_config(file: String) {
