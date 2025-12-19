@@ -68,5 +68,7 @@ struct Battery{
 #[derive(Deserialize)]
 struct Menu{
     icon: String,
+    exec: Option<String>,
+
 
 }
