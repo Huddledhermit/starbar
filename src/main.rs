@@ -6,8 +6,8 @@ use iced::{
 mod configreader;
 mod modules;
 
-fn update() {
-
+fn update_mod() {
+    println!("updated")
 }
 
 fn main() -> iced::Result {
@@ -26,8 +26,8 @@ struct Bar {
 
 impl Bar {
     fn update(&mut self, message: Message) {
-        match Message {
-            Message::Update => update(),
+        match message {
+            Message::Update => update_mod(),
         }
     }
 
@@ -35,7 +35,7 @@ impl Bar {
         column![text(&self.counter),].into()
     }
 
-    fn Subscription(&self) {
+    fn subscription(&self) {
         time::every(Duration::from_secs(1)).map(|_| Message::Update);
     }
 }
