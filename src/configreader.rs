@@ -41,4 +41,19 @@ struct Cpu {
     tooltip: Option<String>,
 }
 #[derive(Deserialize)]
-struct Wifi {}
+struct Wifi {
+    icon_connected: String
+    icon_disconnected: String
+
+}
+#[derive(Deserialize)]
+struct Battery{
+    icons: Vec<String>,
+    format: String,
+    
+}
+#[derive(Deserialize)]
+struct Menu{
+    icon: String,
+    
+}
