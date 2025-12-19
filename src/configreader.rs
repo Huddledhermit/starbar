@@ -25,6 +25,19 @@ fn read_config() -> Cfg {
 //WIP will parse the info from the config structs to the module structs
 fn config_to_modules() {}
 
+// struct to represent the traits of the bar
+// includes things like shape, postion and bg color
+#[derive(Deserialize)]
+struct Starbar{
+    module_shape: enum shape{
+        square,
+        slanted,
+        powerline,
+        round,
+    }
+}
+
+
 //structs representing configs for individual modules
 #[derive(Deserialize)]
 struct Clock {
@@ -50,10 +63,10 @@ struct Wifi {
 struct Battery{
     icons: Vec<String>,
     format: String,
-    
+
 }
 #[derive(Deserialize)]
 struct Menu{
     icon: String,
-    
+
 }
