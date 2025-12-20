@@ -4,7 +4,7 @@ use toml;
 //struct to represent the whole config file
 #[derive(Deserialize)]
 pub struct Cfg {
-    colors: String,
+    colors: Colors,
     //barinfo: starbar,
     modules_left: Option<Vec<String>>,
     modules_right: Option<Vec<String>>,
@@ -18,9 +18,11 @@ pub struct Cfg {
     // battery: Option<Battery>
 }
 //function to read the config and parse it into structs
+
 pub fn read_config() -> Cfg {
     let file = std::fs::read_to_string("starbar/config.toml").unwrap();
-    toml::from_str(&file).unwrap()
+    let config: Cfg = toml::from_str(&file).unwrap();
+    return config;
 }
 // enum to represent different module shapes
 #[derive(Deserialize)]
@@ -33,7 +35,7 @@ pub enum Shape {
 
 //WIP will parse the info from the config structs to the module structs
 fn config_to_modules() {}
-
+#[derive(Deserialize)]
 pub struct Colors {
     bg_color: String,
     fg_color: String,
@@ -81,4 +83,9 @@ pub struct Battery {
 pub struct Menu {
     icon: String,
     exec: Option<String>,
+}
+
+fn test_config() {
+    let config = read_config();
+    println!("{}", config.colors.bg_color)
 }
