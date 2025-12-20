@@ -1,0 +1,10 @@
+[colors]
+bg_color = "#ffffff"
+fg_color = "#000000"
+
+[starbar]
+module_shape = "square"
+
+[clock]
+icon = "time"
+format = "H%M%"
