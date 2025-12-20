@@ -34,6 +34,17 @@ enum Shape {
 //WIP will parse the info from the config structs to the module structs
 fn config_to_modules() {}
 
+struct Colors {
+    bg_color: String,
+    fg_color: String,
+    color3: Option<String>,
+    color4: Option<String>,
+    color5: Option<String>,
+    color6: Option<String>,
+    color7: Option<String>,
+    color8: Option<String>,
+}
+
 // struct to represent the traits of the bar
 // includes things like shape, postion and bg color
 #[derive(Deserialize)]
