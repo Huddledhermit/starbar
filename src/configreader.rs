@@ -3,7 +3,7 @@ use toml;
 
 //struct to represent the whole config file
 #[derive(Deserialize)]
-struct Cfg {
+pub struct Cfg {
     colors: String,
     //barinfo: starbar,
     modules_left: Option<Vec<String>>,
@@ -18,13 +18,13 @@ struct Cfg {
     // battery: Option<Battery>
 }
 //function to read the config and parse it into structs
-fn read_config() -> Cfg {
+pub fn read_config() -> Cfg {
     let file = std::fs::read_to_string("starbar/config.toml").unwrap();
     toml::from_str(&file).unwrap()
 }
 // enum to represent different module shapes
 #[derive(Deserialize)]
-enum Shape {
+pub enum Shape {
     Square,
     Slanted,
     Powerline,
@@ -34,7 +34,7 @@ enum Shape {
 //WIP will parse the info from the config structs to the module structs
 fn config_to_modules() {}
 
-struct Colors {
+pub struct Colors {
     bg_color: String,
     fg_color: String,
     color3: Option<String>,
@@ -48,37 +48,37 @@ struct Colors {
 // struct to represent the traits of the bar
 // includes things like shape, postion and bg color
 #[derive(Deserialize)]
-struct Starbar {
+pub struct Starbar {
     module_shape: Shape,
 }
 
 //structs representing configs for individual modules
 #[derive(Deserialize)]
-struct Clock {
+pub struct Clock {
     icon: Option<String>,
     format: String,
     tooltip: Option<String>,
 }
 
 #[derive(Deserialize)]
-struct Cpu {
+pub struct Cpu {
     icon: String,
     usage: i32,
     format: String,
     tooltip: Option<String>,
 }
 #[derive(Deserialize)]
-struct Wifi {
+pub struct Wifi {
     icon_connected: String,
     icon_discon: String,
 }
 #[derive(Deserialize)]
-struct Battery {
+pub struct Battery {
     icons: Vec<String>,
     format: String,
 }
 #[derive(Deserialize)]
-struct Menu {
+pub struct Menu {
     icon: String,
     exec: Option<String>,
 }
