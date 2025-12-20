@@ -85,7 +85,7 @@ pub struct Menu {
     exec: Option<String>,
 }
 
-fn test_config() {
+pub fn test_config() {
     let config = read_config();
     println!("{}", config.colors.bg_color)
 }

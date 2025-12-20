@@ -1,6 +1,5 @@
 use iced::{
-    Subscription,
-    Task,
+    Subscription, Task,
     time::{self, Duration},
     widget::{button, column, text},
 };
@@ -12,6 +11,7 @@ fn update_mod() {
 }
 
 fn main() -> iced::Result {
+    configreader::test_config();
     iced::application("", Bar::update, Bar::view)
         .subscription(Bar::subscription)
         .run_with(Bar::new)
@@ -24,15 +24,13 @@ enum Message {
 
 #[derive(Default)]
 struct Bar {
-
     seconds: u32,
 }
 
 impl Bar {
-
     fn new() -> (Self, Task<Message>) {
-           (Self { seconds: 0 }, Task::none())
-       }
+        (Self { seconds: 0 }, Task::none())
+    }
 
     fn update(&mut self, message: Message) {
         match message {
