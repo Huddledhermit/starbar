@@ -5,13 +5,13 @@ use toml;
 #[derive(Deserialize)]
 pub struct Cfg {
     colors: Colors,
-    //barinfo: starbar,
+    barinfo: Starbar,
     modules_left: Option<Vec<String>>,
     modules_right: Option<Vec<String>>,
     modules_center: Option<Vec<String>>,
     cpu: Option<Cpu>,
     clock: Option<Clock>,
-    //  launcher: Option<Menu>,
+    launcher: Option<Menu>,
     wifi: Option<Wifi>,
     //bluetooth: Option<Btooth>,
     //power: Option<Power>,
@@ -82,7 +82,7 @@ pub struct Battery {
 #[derive(Deserialize)]
 pub struct Menu {
     icon: String,
-    exec: Option<String>,
+    exec: String,
 }
 
 pub fn test_config() {
