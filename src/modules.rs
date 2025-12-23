@@ -21,9 +21,9 @@ pub struct Starbar {
 
 #[derive(Deserialize)]
 pub struct Colors {
-    bg_color: String,
-    fg_color: String,
-    color3: Option<String>,
+    pub bg_color: String,
+    pub fg_color: String,
+    pub color3: Option<String>,
     color4: Option<String>,
     color5: Option<String>,
     color6: Option<String>,

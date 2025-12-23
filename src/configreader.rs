@@ -16,81 +16,20 @@ fn config_to_modules() {}
 //struct to represent the whole config file
 #[derive(Deserialize)]
 pub struct Cfg {
-    colors: Colors,
-    barinfo: Starbar,
+    colors: modules::Colors,
+    barinfo: modules::Starbar,
     modules_left: Option<Vec<String>>,
     modules_right: Option<Vec<String>>,
     modules_center: Option<Vec<String>>,
-    cpu: Option<Cpu>,
+    cpu: Option<modules::Cpu>,
     clock: Option<modules::Clock>,
-    launcher: Option<Menu>,
-    wifi: Option<Wifi>,
+    launcher: Option<modules::Menu>,
+    wifi: Option<modules::Wifi>,
     //bluetooth: Option<Btooth>,
     //power: Option<Power>,
     // battery: Option<Battery>
 }
-//function to read the config and parse it into the config struct
 
-
-// enum to represent different module shapes
-#[derive(Deserialize)]
-pub enum Shape {
-    Square,
-    Slanted,
-    Powerline,
-    Round,
-}
-
-
-#[derive(Deserialize)]
-pub struct Colors {
-    bg_color: String,
-    fg_color: String,
-    color3: Option<String>,
-    color4: Option<String>,
-    color5: Option<String>,
-    color6: Option<String>,
-    color7: Option<String>,
-    color8: Option<String>,
-}
-
-// struct to represent the traits of the bar
-// includes things like shape, postion and bg color
-#[derive(Deserialize)]
-pub struct Starbar {
-    module_shape: Shape,
-}
-
-//structs representing configs for individual modules
-#[derive(Deserialize)]
-pub struct Clock {
-    icon: Option<String>,
-    format: String,
-    tooltip: Option<String>,
-}
-
-#[derive(Deserialize)]
-pub struct Cpu {
-    icon: String,
-    usage: i32,
-    format: String,
-    tooltip: Option<String>,
-}
-#[derive(Deserialize)]
-pub struct Wifi {
-    icon_connected: String,
-    icon_discon: String,
-}
-#[derive(Deserialize)]
-pub struct Battery {
-    icons: Vec<String>,
-    format: String,
-}
-#[derive(Deserialize)]
-pub struct Menu {
-    icon: String,
-    exec: String,
-}
 
 pub fn test_config() {
     let config = read_config();
