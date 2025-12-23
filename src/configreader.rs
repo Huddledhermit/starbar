@@ -9,11 +9,7 @@ pub fn read_config() -> Cfg {
     return config;
 }
 
-//WIP will parse the info from the config structs to the module structs
-fn config_to_modules() {}
 
-
-//struct to represent the whole config file
 #[derive(Deserialize)]
 pub struct Cfg {
     colors: modules::Colors,

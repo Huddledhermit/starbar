@@ -18,7 +18,6 @@ pub struct Starbar {
    pub  module_shape: Shape,
 }
 
-
 #[derive(Deserialize)]
 pub struct Colors {
     pub bg_color: String,
@@ -31,15 +30,12 @@ pub struct Colors {
     pub color8: Option<String>,
 }
 
-
 #[derive(Deserialize)]
 pub struct Clock {
    pub icon: Option<String>,
     pub tooltip: bool,
     pub tipvalue: Option<String>,
 }
-
-
 
 impl Clock {
     pub fn get_time(&self) -> String {
@@ -48,7 +44,6 @@ impl Clock {
     }
 }
 
-
 #[derive(Deserialize)]
 pub struct Cpu {
     pub icon: String,
@@ -56,7 +51,6 @@ pub struct Cpu {
     pub format: String,
     pub tooltip: Option<String>,
 }
-
 
 #[derive(Deserialize)]
 pub struct Wifi {
@@ -69,6 +63,7 @@ pub struct Battery {
     pub icons: Vec<String>,
     pub format: String,
 }
+
 #[derive(Deserialize)]
 pub struct Menu {
     pub icon: String,
@@ -83,8 +78,6 @@ impl Menu {
             command.arg(i);
         }
         command.output()
-
-
     }
 
 }
