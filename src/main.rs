@@ -3,6 +3,10 @@ use iced::{
     time::{self, Duration},
     widget::{button, column, text},
 };
+use iced_layershell::application;
+use iced_layershell::reexport::Anchor;
+use iced_layershell::settings::{LayerShellSettings, StartMode, Settings};
+use iced_layershell::to_layer_message;
 mod configreader;
 mod modules;
 
@@ -10,8 +14,8 @@ fn update_mod() {
     println!("updated")
 }
 
-fn main() -> iced::Result {
-    configreader::test_config();
+fn main() -> Result<(), iced_layershell::Error>  {
+    let config = configreader::read_config;
     iced::application("", Bar::update, Bar::view)
         .subscription(Bar::subscription)
         .run_with(Bar::new)

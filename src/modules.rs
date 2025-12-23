@@ -5,30 +5,6 @@ use chrono::{DateTime, Local};
 use iced;
 use crate::configreader;
 
-#[derive(Deserialize)]
-pub enum Shape {
-    Square,
-    Slanted,
-    Powerline,
-    Round,
-}
-
-#[derive(Deserialize)]
-pub struct Starbar {
-   pub  module_shape: Shape,
-}
-
-#[derive(Deserialize)]
-pub struct Colors {
-    pub bg_color: String,
-    pub fg_color: String,
-    pub color3: Option<String>,
-    pub color4: Option<String>,
-    pub color5: Option<String>,
-    pub color6: Option<String>,
-    pub color7: Option<String>,
-    pub color8: Option<String>,
-}
 
 #[derive(Deserialize)]
 pub struct Clock {
@@ -38,9 +14,9 @@ pub struct Clock {
 }
 
 impl Clock {
-    pub fn get_time(&self) -> String {
+    pub fn get_time(&self, time_format: &str) -> String {
         let time_no_format = chrono::Local::now();
-        format!("{}", time_no_format.format("%H:%M|%d/%m"))
+        format!("{}", time_no_format.format(time_format))
     }
 }
 
