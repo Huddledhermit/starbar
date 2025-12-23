@@ -15,7 +15,7 @@ pub enum Shape {
 
 #[derive(Deserialize)]
 pub struct Starbar {
-    module_shape: Shape,
+   pub  module_shape: Shape,
 }
 
 
@@ -24,20 +24,20 @@ pub struct Colors {
     pub bg_color: String,
     pub fg_color: String,
     pub color3: Option<String>,
-    color4: Option<String>,
-    color5: Option<String>,
-    color6: Option<String>,
-    color7: Option<String>,
-    color8: Option<String>,
+    pub color4: Option<String>,
+    pub color5: Option<String>,
+    pub color6: Option<String>,
+    pub color7: Option<String>,
+    pub color8: Option<String>,
 }
 
 
 #[derive(Deserialize)]
 pub struct Clock {
-    icon: Option<String>,
-    time: String,
-    tooltip: bool,
-    tipvalue: Option<String>,
+   pub icon: Option<String>,
+    pub time: String,
+    pub tooltip: bool,
+    pub tipvalue: Option<String>,
 }
 
 
@@ -56,26 +56,26 @@ impl Clock {
 
 #[derive(Deserialize)]
 pub struct Cpu {
-    icon: String,
-    usage: i32,
-    format: String,
-    tooltip: Option<String>,
+    pub icon: String,
+    pub usage: i32,
+    pub format: String,
+    pub tooltip: Option<String>,
 }
 
 
 #[derive(Deserialize)]
 pub struct Wifi {
-    icon_connected: String,
-    icon_discon: String,
+    pub icon_connected: String,
+    pub icon_discon: String,
 }
 
 #[derive(Deserialize)]
 pub struct Battery {
-    icons: Vec<String>,
-    format: String,
+    pub icons: Vec<String>,
+    pub format: String,
 }
 #[derive(Deserialize)]
 pub struct Menu {
-    icon: String,
-    exec: String,
+    pub icon: String,
+    pub exec: String,
 }
