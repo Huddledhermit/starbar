@@ -2,11 +2,18 @@ use iced::{
     Subscription, Task,
     time::{self, Duration},
     widget::{button, column, text},
+    Alignment,
+    Color,
+    Element,
+    Event,
+    Length,
+    Task as Command,
+    event
 };
-use iced_layershell::application;
-use iced_layershell::reexport::Anchor;
-use iced_layershell::settings::{LayerShellSettings, StartMode, Settings};
-use iced_layershell::to_layer_message;
+use iced_layershell::{application,
+    reexport::Anchor,
+settings::{LayerShellSettings, StartMode, Settings},
+to_layer_message };
 mod configreader;
 mod modules;
 
