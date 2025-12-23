@@ -35,7 +35,6 @@ pub struct Colors {
 #[derive(Deserialize)]
 pub struct Clock {
    pub icon: Option<String>,
-    pub time: String,
     pub tooltip: bool,
     pub tipvalue: Option<String>,
 }
@@ -46,10 +45,6 @@ impl Clock {
     pub fn get_time(&self) -> String {
         let time_no_format = chrono::Local::now();
         format!("{}", time_no_format.format("%H:%M|%d/%m"))
-    }
-    pub fn Update_Time(&mut self){
-        let new_time = self.get_time();
-        self.time = new_time;
     }
 }
 
