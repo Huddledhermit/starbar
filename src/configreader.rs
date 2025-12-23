@@ -12,8 +12,8 @@ pub fn read_config() -> Cfg {
 
 #[derive(Deserialize)]
 pub struct Cfg {
-    colors: modules::Colors,
-    barinfo: modules::Starbar,
+    colors: Colors,
+    barinfo: Starbar,
     modules_left: Option<Vec<String>>,
     modules_right: Option<Vec<String>>,
     modules_center: Option<Vec<String>>,
@@ -26,6 +26,31 @@ pub struct Cfg {
     // battery: Option<Battery>
 }
 
+
+#[derive(Deserialize)]
+pub enum Shape {
+    Square,
+    Slanted,
+    Powerline,
+    Round,
+}
+
+#[derive(Deserialize)]
+pub struct Starbar {
+   pub  module_shape: Shape,
+}
+
+#[derive(Deserialize)]
+pub struct Colors {
+    pub bg_color: String,
+    pub fg_color: String,
+    pub color3: Option<String>,
+    pub color4: Option<String>,
+    pub color5: Option<String>,
+    pub color6: Option<String>,
+    pub color7: Option<String>,
+    pub color8: Option<String>,
+}
 
 pub fn test_config() {
     let config = read_config();
