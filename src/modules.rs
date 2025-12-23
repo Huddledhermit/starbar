@@ -81,7 +81,14 @@ pub struct Menu {
 }
 
 impl Menu {
-    fn on_press(){
+    fn on_press(com:&Str){
+        let parsed_command: Vec<String>= com.split(" ");
+        let mut command = std::process::Command::new(parsed_command[0]);
+        for i in parsed_command[1..-1]{
+            command.arg(i);
+        }
+        command.output()
+
 
     }
 
