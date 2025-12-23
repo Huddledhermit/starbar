@@ -1,5 +1,7 @@
 use serde::Deserialize;
 use toml;
+use crate::modules;
+
 
 pub fn read_config() -> Cfg {
     let file = std::fs::read_to_string("starbar/config.toml").unwrap();
@@ -20,7 +22,7 @@ pub struct Cfg {
     modules_right: Option<Vec<String>>,
     modules_center: Option<Vec<String>>,
     cpu: Option<Cpu>,
-    clock: Option<Clock>,
+    clock: Option<modules::Clock>,
     launcher: Option<Menu>,
     wifi: Option<Wifi>,
     //bluetooth: Option<Btooth>,

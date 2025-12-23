@@ -1,23 +1,20 @@
 use std::string;
-
+use serde::Deserialize;
+use toml;
 use chrono::{DateTime, Local};
 use iced;
+use crate::configreader;
 
+#[derive(Deserialize)]
 pub struct Clock {
     text: String,
     time: String,
     tooltip: bool,
     tipvalue: Option<String>,
 }
+
+
 impl Clock {
-    fn new(mut self, display: String, tooltip: bool) -> Clock {
-        self.text = display;
-        if self.tooltip == false {
-            self.tipvalue = None
-        } else {
-        };
-        self
-    }
     pub fn get_time(&self) -> String {
         let time_no_format = chrono::Local::now();
         format!("{}", time_no_format.format("%H:%M|%d/%m"))
@@ -27,6 +24,3 @@ impl Clock {
         self.time = new_time;
     }
 }
-pub struct Cpu {}
-
-pub struct Panel {}
