@@ -79,3 +79,10 @@ pub struct Menu {
     pub icon: String,
     pub exec: String,
 }
+
+impl Menu {
+    fn on_press(){
+
+    }
+
+}
