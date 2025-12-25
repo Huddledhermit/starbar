@@ -1,14 +1,13 @@
-use std::string;
-use serde::Deserialize;
-use toml;
+use crate::configreader;
 use chrono::{DateTime, Local};
 use iced;
-use crate::configreader;
-
+use serde::Deserialize;
+use std::string;
+use toml;
 
 #[derive(Deserialize)]
 pub struct Clock {
-   pub icon: Option<String>,
+    pub icon: Option<String>,
     pub tooltip: bool,
     pub tipvalue: Option<String>,
 }
@@ -47,13 +46,13 @@ pub struct Menu {
 }
 
 impl Menu {
-    fn on_press(com:&Str){
-        let parsed_command: Vec<String>= com.split(" ");
+    fn on_press(com: &str) {
+        let mut parsed_command: Vec<&str> = com.split(" ").collect();
         let mut command = std::process::Command::new(parsed_command[0]);
-        for i in parsed_command[1..-1]{
+        parsed_command.remove(0);
+        for i in parsed_command {
             command.arg(i);
         }
-        command.output()
+        command.output();
     }
-
 }

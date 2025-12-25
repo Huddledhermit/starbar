@@ -2,10 +2,10 @@ use iced::{
     Subscription, Task,
     time::{self, Duration},
     widget::{button, column, text},
-    theme::Style
+
 };
 use iced::{Alignment, Color, Element, Event, Length, Task as Command, event}
-use iced_layershell::{application,
+use iced_layershell::{build_pattern,
     reexport::Anchor,
 settings::{LayerShellSettings, StartMode, Settings},
 to_layer_message };
@@ -19,7 +19,7 @@ fn update_mod() {
 fn main() -> Result<(), iced_layershell::Error>  {
     let config = configreader::read_config;
 
-    iced::application("", Bar::update, Bar::view)
+    build_pattern::application( "", Bar::update, Bar::view)
         .subscription(Bar::subscription)
         .settings(Settings {
                     layer_settings: LayerShellSettings {
