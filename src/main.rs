@@ -17,49 +17,61 @@ fn update_mod() {
 }
 
 fn main() -> Result<(), iced_layershell::Error>  {
+
+    let args: Vec<String> = std::env::args().collect();
+
+        let mut binded_output_name = None;
+        if args.len() >= 2 {
+            binded_output_name = Some(args[1].to_string())
+        }
+
+        let start_mode = match binded_output_name {
+            Some(output) => StartMode::TargetScreen(output),
+            None => StartMode::Active,
+        };
+
     let config = configreader::read_config;
 
-    build_pattern::application( "", Bar::update, Bar::view)
-        .subscription(Bar::subscription)
+    build_pattern::application( namespace ,update, view)
+        .subscription(subscription)
         .settings(Settings {
                     layer_settings: LayerShellSettings {
                         size: Some((0, 400)),
                         exclusive_zone: 400,
-                        anchor: Anchor::Bottom | Anchor::Left | Anchor::Right,
+                        anchor: Anchor::Bottom,
                         start_mode,
                         ..Default::default()
+
                     },
                     ..Default::default()
                 })
-        .run_with(Bar::new)
+        .run()
 }
+
+fn namespace() -> String {
+    String::from("test window")
+}
+
 
 #[derive(Debug, Clone)]
 enum Message {
     Update,
 }
 
-#[derive(Default)]
-struct Bar {
-    seconds: u32,
-}
 
-impl Bar {
-    fn new() -> (Self, Task<Message>) {
-        (Self { seconds: 0 }, Task::none())
-    }
 
-    fn update(&mut self, message: Message) {
+
+
+    fn update(message: Message) {
         match message {
             Message::Update => update_mod(),
         }
     }
 
-    fn view(&self) -> iced::Element<Message> {
-        column![text(self.seconds)].into()
+    fn view() -> iced::Element<Message> {
+
     }
 
-    fn subscription(&self) -> iced::Subscription<Message> {
+    fn subscription() -> iced::Subscription<Message> {
         time::every(Duration::from_secs(1)).map(|_| Message::Update)
     }
-}
