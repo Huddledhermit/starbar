@@ -2,7 +2,6 @@ use iced::{
     Subscription, Task,
     time::{self, Duration},
     widget::{button, column, text},
-
 };
 use iced::{Alignment, Color, Element, Event, Length, Task as Command, event}
 use iced_layershell::{build_pattern,
@@ -17,6 +16,7 @@ fn update_mod() {
 }
 
 fn main() -> Result<(), iced_layershell::Error>  {
+    let config = configreader::read_config;
 
     let args: Vec<String> = std::env::args().collect();
 
@@ -28,50 +28,30 @@ fn main() -> Result<(), iced_layershell::Error>  {
         let start_mode = match binded_output_name {
             Some(output) => StartMode::TargetScreen(output),
             None => StartMode::Active,
+
+            build_pattern::application(namespace,)
+
         };
-
-    let config = configreader::read_config;
-
-    build_pattern::application( namespace ,update, view)
-        .subscription(subscription)
-        .settings(Settings {
-                    layer_settings: LayerShellSettings {
-                        size: Some((0, 400)),
-                        exclusive_zone: 400,
-                        anchor: Anchor::Bottom,
-                        start_mode,
-                        ..Default::default()
-
-                    },
-                    ..Default::default()
-                })
-        .run()
-}
 
 fn namespace() -> String {
     String::from("test window")
 }
-
-
+#[to_layer_message]
 #[derive(Debug, Clone)]
 enum Message {
     Update,
 }
 
-
-
-
-
-    fn update(message: Message) {
-        match message {
-            Message::Update => update_mod(),
+fn update(message: Message) {
+    match message {
+        Message::Update => update_mod(),
         }
-    }
+}
 
-    fn view() -> iced::Element<Message> {
+fn view() -> iced::Element<Message> {
 
-    }
+}
 
-    fn subscription() -> iced::Subscription<Message> {
-        time::every(Duration::from_secs(1)).map(|_| Message::Update)
-    }
+fn subscription() -> iced::Subscription<Message> {
+    time::every(Duration::from_secs(1)).map(|_| Message::Update)
+}
