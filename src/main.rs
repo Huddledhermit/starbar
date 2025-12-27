@@ -3,11 +3,11 @@ use iced::{
     time::{self, Duration},
     widget::{button, column, text},
 };
-use iced::{Alignment, Color, Element, Event, Length, Task as Command, event}
-use iced_layershell::{build_pattern,
-    reexport::Anchor,
-settings::{LayerShellSettings, StartMode, Settings},
-to_layer_message };
+use iced::{Aligment, Color, Element, Event, Length, Task as Command, event}
+use iced_layershell::application;
+use iced_layershell::reexport::Anchor;
+use iced_layershell::settings::{LayerShellSettings, StartMode, Settings};
+use iced_layershell::to_layer_message;
 mod configreader;
 mod modules;
 
@@ -28,18 +28,42 @@ fn main() -> Result<(), iced_layershell::Error>  {
         let start_mode = match binded_output_name {
             Some(output) => StartMode::TargetScreen(output),
             None => StartMode::Active,
-
-            build_pattern::application(namespace,)
-
         };
+        iced_layershell::build_pattern::application(bar::default(), namespace,update,view)
+            .subscription(subscription)
+            .settings( Settings{Layer_settings:LayerShellSettings {}
+            size: Some((0,400)),
 
-fn namespace() -> String {
-    String::from("test window")
+                }
+
+            )
+            .run()
 }
+
+
+#[derive(Default)]
+struct bar {
+
+}
+#[derive(Debug,Clone,Copy)]
+enum windowdirection{
+    Top,
+    Bottom,
+    Left,
+    Right,
+
+}
+
 #[to_layer_message]
 #[derive(Debug, Clone)]
 enum Message {
+    IcedEvent,
     Update,
+    Direction(windowdirection),
+}
+
+fn namespace() -> String {
+    String::from("test_window")
 }
 
 fn update(message: Message) {
@@ -53,5 +77,6 @@ fn view() -> iced::Element<Message> {
 }
 
 fn subscription() -> iced::Subscription<Message> {
+    event::listen().map(Message::IcedEvent);
     time::every(Duration::from_secs(1)).map(|_| Message::Update)
 }
