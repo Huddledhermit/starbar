@@ -1,14 +1,12 @@
-use serde::Deserialize;
-use toml;
 use crate::modules;
-
+use serde::Deserialize;
+use toml::{self, Deserializer};
 
 pub fn read_config() -> Cfg {
     let file = std::fs::read_to_string("starbar/config.toml").unwrap();
     let config: Cfg = toml::from_str(&file).unwrap();
     return config;
 }
-
 
 #[derive(Deserialize)]
 pub struct Cfg {
@@ -26,7 +24,6 @@ pub struct Cfg {
     // battery: Option<Battery>
 }
 
-
 #[derive(Deserialize)]
 pub enum Shape {
     Square,
@@ -37,7 +34,7 @@ pub enum Shape {
 
 #[derive(Deserialize)]
 pub struct Starbar {
-   pub  module_shape: Shape,
+    pub module_shape: Shape,
 }
 
 #[derive(Deserialize)]
