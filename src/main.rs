@@ -1,10 +1,10 @@
 use iced::{
     Subscription, Task,
     time::{self, Duration},
-    widget::{button, column, text},
+    widget::{Button, button, column, text},
 };
-use iced::{Aligment, Color, Element, Event, Length, Task as Command, event}
-use iced_layershell::application;
+use iced::{Aligment, Color, Element, Event, Length, Task as Command, event};
+use iced_layershell::build_pattern;
 use iced_layershell::reexport::Anchor;
 use iced_layershell::settings::{LayerShellSettings, StartMode, Settings};
 use iced_layershell::to_layer_message;
@@ -29,7 +29,7 @@ fn main() -> Result<(), iced_layershell::Error>  {
             Some(output) => StartMode::TargetScreen(output),
             None => StartMode::Active,
         };
-        iced_layershell::build_pattern::application(bar::default(), namespace,update,view)
+        build_pattern::application(bar::default(), namespace,update,view)
             .subscription(subscription)
             .settings( Settings{Layer_settings:LayerShellSettings {}
             size: Some((0,400)),
@@ -46,7 +46,7 @@ struct bar {
 
 }
 #[derive(Debug,Clone,Copy)]
-enum windowdirection{
+enum WindowDirection{
     Top,
     Bottom,
     Left,
@@ -57,26 +57,53 @@ enum windowdirection{
 #[to_layer_message]
 #[derive(Debug, Clone)]
 enum Message {
-    IcedEvent,
+    IcedEvent(Event),
     Update,
-    Direction(windowdirection),
+    Direction(WindowDirection),
 }
 
 fn namespace() -> String {
     String::from("test_window")
 }
 
-fn update(message: Message) {
+fn update(counter: &mut bar, message: Message) -> Command<Message> {
     match message {
-        Message::Update => update_mod(),
+        Message::IcedEvent(event) => {
+            println!("hello {event:?}");
+            Command::none()
         }
+
+        Message::Direction(direction) => match direction {
+            WindowDirection::Left => Command::done(Message::AnchorSizeChange(
+                Anchor::Left | Anchor::Top | Anchor::Bottom,
+                (400, 0),
+            )),
+            WindowDirection::Right => Command::done(Message::AnchorSizeChange(
+                Anchor::Right | Anchor::Top | Anchor::Bottom,
+                (400, 0),
+            )),
+            WindowDirection::Bottom => Command::done(Message::AnchorSizeChange(
+                Anchor::Bottom | Anchor::Left | Anchor::Right,
+                (0, 400),
+            )),
+            WindowDirection::Top => Command::done(Message::AnchorSizeChange(
+                Anchor::Top | Anchor::Left | Anchor::Right,
+                (0, 400),
+            )),
+        },
+        _ => unreachable!(),
+    }
 }
 
-fn view() -> iced::Element<Message> {
+
+fn view() -> Element<Message> {
+    column![
+        button("test").on_press(Message::Update)
+    ].into()
 
 }
 
-fn subscription() -> iced::Subscription<Message> {
+  fn subscription() -> iced::Subscription<Message> {
     event::listen().map(Message::IcedEvent);
     time::every(Duration::from_secs(1)).map(|_| Message::Update)
 }
