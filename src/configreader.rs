@@ -12,6 +12,7 @@ pub fn read_config() -> Cfg {
 pub struct Cfg {
     colors: Colors,
     barinfo: Starbar,
+    pub modules: Vec<String>,
     modules_left: Option<Vec<String>>,
     modules_right: Option<Vec<String>>,
     modules_center: Option<Vec<String>>,
