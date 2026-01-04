@@ -16,7 +16,7 @@ fn init_bar() -> bar {
     let init_config = configreader::read_config();
     bar {
         config: init_config,
-        modules: &init_config.modules,
+        modules: init_config.modules,
     }
 }
 
@@ -26,7 +26,7 @@ fn update_mod() {
 
 fn main() -> Result<(), iced_layershell::Error> {
     let args: Vec<String> = std::env::args().collect();
-
+    let mut newbar = init_bar();
     let mut binded_output_name = None;
     if args.len() >= 2 {
         binded_output_name = Some(args[1].to_string())
@@ -36,7 +36,7 @@ fn main() -> Result<(), iced_layershell::Error> {
         Some(output) => StartMode::TargetScreen(output),
         None => StartMode::Active,
     };
-    build_pattern::application(init_bar, namespace, update, view)
+    build_pattern::application(window::default, namespace, update, view)
         .style(style)
         .subscription(subscription)
         .settings(Settings {
@@ -52,10 +52,15 @@ fn main() -> Result<(), iced_layershell::Error> {
         .run()
 }
 
-// #[derive(Default)]
+
+
 struct bar {
-    config: configreader::&Cfg,
-    modules: &Vec<String>,
+    config: configreader::Cfg,
+    modules: Vec<String>,
+}
+#[derive(Default)]
+struct window{
+    id: i32
 }
 
 #[derive(Debug, Clone, Copy)]
@@ -78,7 +83,7 @@ fn namespace() -> String {
     String::from("test_window")
 }
 
-fn update(message: Message) -> Command<Message> {
+fn update(bar:&mut window ,message: Message) -> Command<Message> {
     match message {
         Message::IcedEvent(event) => {
             println!("hello {event:?}");
@@ -107,16 +112,16 @@ fn update(message: Message) -> Command<Message> {
     }
 }
 
-fn view() -> Element<Message> {
+fn view(bar: &window) -> Element<Message> {
     column![button("test").on_press(Message::Update)].into()
 }
 
-fn subscription(_: &bar) -> iced::Subscription<Message> {
+fn subscription(_: &window) -> iced::Subscription<Message> {
     event::listen().map(Message::IcedEvent);
     time::every(Duration::from_secs(1)).map(|_| Message::Update)
 }
 
-fn style(_counter: &bar, theme: &iced::Theme) -> iced::theme::Style {
+fn style(_counter: &window, theme: &iced::Theme) -> iced::theme::Style {
     theme::Style {
         background_color: Color::TRANSPARENT,
         text_color: theme.palette().text,
