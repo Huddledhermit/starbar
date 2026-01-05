@@ -113,7 +113,10 @@ fn update(bar:&mut window ,message: Message) -> Command<Message> {
 }
 
 fn view(bar: &window) -> Element<Message> {
-    column![button("test").on_press(Message::Update)].into()
+    column![button("test").on_press(Message::Update)].padding(20)
+        .spacing(10)
+        .width(Length::Fill)
+        .height(Length::Fill).into()
 }
 
 fn subscription(_: &window) -> iced::Subscription<Message> {
