@@ -1,11 +1,10 @@
 use crate::configreader;
 use chrono::{DateTime, Local};
-use iced;
 use serde::Deserialize;
 use std::string;
 use toml;
 
-#[derive(Deserialize)]
+#[derive(serde::Deserialize)]
 pub struct Clock {
     pub icon: Option<String>,
     pub tooltip: bool,

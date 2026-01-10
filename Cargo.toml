@@ -5,8 +5,9 @@ edition = "2024"
 
 [dependencies]
 chrono = "0.4.42"
-iced = { version = "0.13.1", features = ["tokio"] }
 tokio = { version = "1.44.2", features = ["time"] }
-iced_layershell = "0.13.7"
-serde = "1.0.228"
+serde = {version="1.0", features = ["derive"]}
 toml = "0.9.8"
+gtk4 = "0.10.3"
+gtk4-layer-shell = "0.7.1"
+gio = "0.21.5"

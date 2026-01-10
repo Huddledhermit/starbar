@@ -8,7 +8,7 @@ pub fn read_config() -> Cfg {
     return config;
 }
 
-#[derive(Deserialize)]
+#[derive(serde::Deserialize)]
 pub struct Cfg {
     colors: Colors,
     barinfo: Starbar,
