@@ -24,7 +24,7 @@ fn activate(application: &gtk4::Application) {
         window.set_anchor(anchor,state);
     }
 
-    let label = gtk::Label::new(Some(""));
+    let label = gtk4::Label::new(Some(""));
        label.set_markup("<span font_desc=\"20.0\">GTK Layer Shell example!</span>");
        window.set_child(Some(&label));
        window.show()
@@ -32,7 +32,7 @@ fn activate(application: &gtk4::Application) {
 }
 
 pub fn main() {
-
+    let bar_config = configreader::read_config();
     let application=gtk4::application::new(Some("sh.wmww.gtk-layer-example"), Default::default());
     application.connect_activate(|app|{
         activate(app);
