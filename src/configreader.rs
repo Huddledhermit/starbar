@@ -3,7 +3,7 @@ use serde::Deserialize;
 use toml::{self, Deserializer};
 
 pub fn read_config() -> Cfg {
-    let file = std::fs::read_to_string("starbar/config.toml").unwrap();
+    let file = std::fs::read_to_string("config.toml").unwrap();
     let config: Cfg = toml::from_str(&file).unwrap();
     return config;
 }
@@ -11,7 +11,7 @@ pub fn read_config() -> Cfg {
 #[derive(serde::Deserialize)]
 pub struct Cfg {
     colors: Colors,
-    barinfo: Starbar,
+    barinfo: Option<Starbar>,
     pub modules: Vec<String>,
     modules_left: Option<Vec<String>>,
     modules_right: Option<Vec<String>>,

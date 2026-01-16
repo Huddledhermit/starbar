@@ -7,8 +7,6 @@ use toml;
 #[derive(serde::Deserialize)]
 pub struct Clock {
     pub icon: Option<String>,
-    pub tooltip: bool,
-    pub tipvalue: Option<String>,
 }
 
 impl Clock {
